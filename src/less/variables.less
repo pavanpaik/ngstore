@@ -1,0 +1,60 @@
+/**
+ * These are the variables used throughout the application. This is where 
+ * overwrites that are not specific to components should be maintained.
+ */
+
+@import '../../vendor/bootstrap/less/variables.less';
+
+
+/**
+ * Typography-related.
+ */
+
+@sansFontFamily: 'Roboto', sans-serif;
+
+@icon-font-path:          "/assets/fonts/";
+
+//@brand-primary:	#DD791D;
+
+/**
+ * Layout
+ */
+
+@grid-gutter-width:         10px;
+
+// double up screen-* and container-* to switch off breakpoint
+@screen-xs:                  480px;
+@screen-sm:                  768px;
+@screen-md:                  1024px;
+@screen-lg:                  1200px;
+
+@screen-phablet:             540px;
+@screen-xs-plus1:            ((1px + @screen-xs));
+
+@container-tablet:           ((740px + @grid-gutter-width));
+@container-desktop:          ((1010px + @grid-gutter-width));
+@container-large-desktop:    ((1140px + @grid-gutter-width));
+
+// screen and font colors
+@color:           #707070;
+@bkcolor:         #FFF;
+
+@loadingbar-color:	#000;
+
+@topbar-color:		#000;
+@topbar-bkcolor:	@brand-primary;//#DD791D;
+
+@header-color:    #000;
+@header-bkcolor:  #FFF;//#178A8F;//#3B3C41;
+@dx-blue:         #528FCA;
+
+@menu-height:	36px;
+@menu-color:    #000;
+@menu-bkcolor:  @gray-light;//#C0C0C0;//#3B3C41;
+
+@footer-color:    #E7E7E7;  
+@footer-bkcolor:  #595A5E;    
+
+.col-main {
+  width: 100%;
+}

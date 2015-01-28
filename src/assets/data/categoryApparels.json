@@ -1,0 +1,64 @@
+{
+	"CatalogGroupView": [
+		{
+			"identifier": "Girls",
+			"name": "Girls",
+			"parentCatalogGroupID": [
+				"10051"
+			],
+			"productsURL": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/productview\/byCategory\/10055",
+			"resourceId": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/categoryview\/byId\/10055",
+			"shortDescription": "Girls",
+			"thumbnail": "images\/catalog\/apparel\/women\/category\/Girls.png",
+			"uniqueID": "10055"
+		},
+		{
+			"identifier": "Boys",
+			"name": "Boys",
+			"parentCatalogGroupID": [
+				"10051"
+			],
+			"productsURL": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/productview\/byCategory\/10054",
+			"resourceId": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/categoryview\/byId\/10054",
+			"shortDescription": "boys",
+			"thumbnail": "images\/catalog\/apparel\/women\/category\/Boys.png",
+			"uniqueID": "10054"
+		},
+		{
+			"identifier": "Women",
+			"name": "Women",
+			"parentCatalogGroupID": [
+				"10051"
+			],
+			"productsURL": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/productview\/byCategory\/10053",
+			"resourceId": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/categoryview\/byId\/10053",
+			"shortDescription": "Women",
+			"thumbnail": "images\/catalog\/apparel\/women\/category\/Womens.png",
+			"uniqueID": "10053"
+		},
+		{
+			"identifier": "Men",
+			"name": "Men",
+			"parentCatalogGroupID": [
+				"10051"
+			],
+			"productsURL": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/productview\/byCategory\/10052",
+			"resourceId": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/categoryview\/byId\/10052",
+			"shortDescription": "Men",
+			"thumbnail": "images\/catalog\/apparel\/women\/category\/Mens.png",
+			"uniqueID": "10052"
+		}
+	],
+	"MetaData": [
+		{
+			"metaData": "1",
+			"metaKey": "price"
+		}
+	],
+	"recordSetComplete": "true",
+	"recordSetCount": "4",
+	"recordSetStartNumber": "0",
+	"recordSetTotal": "4",
+	"resourceId": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/categoryview\/byParentCategory\/10051",
+	"resourceName": "categoryview"
+}

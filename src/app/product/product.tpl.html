@@ -1,0 +1,146 @@
+<div class="row">
+
+    <div class="col-xs-6 col-md-6">
+      <img class="img-responsive" src="http://wcsbsc.ls.lagaude.ibm.com{{productView.CatalogEntryView[0].fullImage}}" />
+    </div>
+    <div class="col-xs-6 col-md-6">
+        <h1>{{productView.CatalogEntryView[0].name}}</h1>
+        <h3>{{productView.CatalogEntryView[0].Price[0].priceValue | currency:"USD$"}}</h3>
+
+
+
+
+        <div ng-controller="RatingCtrl">
+            <rating value="rate" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating>
+            <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
+            <span><b>{{rate}}/{{max}}</b>
+            </span>
+        </div>
+
+        {{productView.CatalogEntryView[0].shortDescription}}
+    </div>
+    <div class="clearfix visible-xs">
+    </div>
+    <div class="col-xs-6 col-md-6">
+
+        <div class="product-swatch panel">
+            <div ng-repeat="attributeObj in productView.CatalogEntryView[0].Attributes">
+              
+              <div ng-if="attributeObj.usage == 'Defining'">
+              <div class="row"> {{attributeObj.name}} </div>
+              
+              <div class="row">
+                <div class="item pull-left" ng-repeat='attrValueObj in attributeObj.Values'>
+
+                  <a ui-sref='home'>
+                      <img src="http://wcsbsc.ls.lagaude.ibm.com/wcsstore/{{attrValueObj.extendedValue[0].value}}" alt="{{attrValueObj.values}}" title="{{attrValueObj.values}}" class="img-thumbnail">
+                  </a>
+                </div>
+              </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="product-control panel">
+          <div class="input-group quantity row">
+              <span class="input-group-addon">Quantity :</span>
+              <input type="text" class="form-control" maxlength="3">
+          </div>
+          <button type="button" class="btn btn-primary">Add to Cart</button>
+          <div class="btn-group">
+              <button type="button" class="btn btn-primary">Add to Wishlist</button>
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Save for Later</a>
+                  </li>
+                  <li><a href="#">Something else here</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-xs-9 col-md-9">
+
+        <div ng-controller="ProductTabsCtrl">
+            <tabset>
+                <tab heading="Overview">
+                    {{productView.CatalogEntryView[0].longDescription}}
+                </tab>
+                <tab heading="Reviews and Ratings">
+                    Reviews and Ratings Reviews and Ratings
+                </tab>
+                <tab heading="Others Purchased">
+                    Others Purchased Others Purchased
+                </tab>
+            </tabset>
+
+        </div>
+
+
+
+
+    </div>
+    <div class="col-xs-3 col-md-3">
+    </div>
+</div>
+
+
+<article class='product'>
+    <h1 ng-bind-html='product.title'></h1>
+    <p class='intro' ng-bind-html='product.description'></p>
+    <table>
+        <tr>
+            <td class='mainImage' ng-if='product.imageUrl'>
+                <img ng-src='{{imgBaseUrl}}/products/{{product.imageUrl}}'>
+            </td>
+            <td class='cart'>
+                <cart-item></cart-item>
+            </td>
+        </tr>
+        <tr>
+            <td colspan=2>
+                <aside ng-social-buttons data-url='product.url' data-title='product.title' data-description='product.title' data-image='product.imageUrl'>
+                    <span class="ng-social-facebook">Like</span>
+                    <span class="ng-social-twitter">Tweet</span>
+                    <span class="ng-social-pinterest">Pin</span>
+                </aside>
+            </td>
+        </tr>
+    </table>
+
+    <tabset>
+        <tab heading="Details" ng-if='product.text'>
+            <p ng-bind-html='product.text'></p>
+        </tab>
+        <tab heading="Features" ng-if='product.features'>
+            <ul class='features'>
+                <li class='feature-link' ng-repeat='feature in product.features'></li>
+            </ul>
+        </tab>
+        <tab ng-repeat='link in product.links' heading='{{link.title}}'>
+            <div ng-switch on='link.type'>
+                <div ng-switch-when='template'>
+                    <div ng-include='link.links[0]'></div>
+                </div>
+                <div ng-switch-when='link'>
+                    <ul>
+                        <li ng-repeat='lo in link.links'><a ng-href='{{lo.href}}' target>{{lo.title}}</a>
+                        </li>
+                    </ul>
+                </div>
+                <product-list ng-switch-default products='link.links'></product-list>
+            </div>
+        </tab>
+    </tabset>
+</article>

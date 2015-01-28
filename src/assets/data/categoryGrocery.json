@@ -1,0 +1,64 @@
+{
+	"CatalogGroupView": [
+		{
+			"identifier": "Meat",
+			"name": "Meat",
+			"parentCatalogGroupID": [
+				"10083"
+			],
+			"productsURL": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/productview\/byCategory\/10086",
+			"resourceId": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/categoryview\/byId\/10086",
+			"shortDescription": "Meat",
+			"thumbnail": "images\/catalog\/grocery\/meats.png",
+			"uniqueID": "10086"
+		},
+		{
+			"identifier": "Fruit",
+			"name": "Fruit",
+			"parentCatalogGroupID": [
+				"10083"
+			],
+			"productsURL": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/productview\/byCategory\/10085",
+			"resourceId": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/categoryview\/byId\/10085",
+			"shortDescription": "Fruit",
+			"thumbnail": "images\/catalog\/grocery\/fruits.png",
+			"uniqueID": "10085"
+		},
+		{
+			"identifier": "Dairy",
+			"name": "Dairy",
+			"parentCatalogGroupID": [
+				"10083"
+			],
+			"productsURL": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/productview\/byCategory\/10084",
+			"resourceId": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/categoryview\/byId\/10084",
+			"shortDescription": "Dairy",
+			"thumbnail": "images\/catalog\/grocery\/dairy.png",
+			"uniqueID": "10084"
+		},
+		{
+			"identifier": "Vegetables",
+			"name": "Vegetables",
+			"parentCatalogGroupID": [
+				"10083"
+			],
+			"productsURL": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/productview\/byCategory\/10087",
+			"resourceId": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/categoryview\/byId\/10087",
+			"shortDescription": "Vegetables",
+			"thumbnail": "images\/catalog\/grocery\/vegetables.png",
+			"uniqueID": "10087"
+		}
+	],
+	"MetaData": [
+		{
+			"metaData": "1",
+			"metaKey": "price"
+		}
+	],
+	"recordSetComplete": "true",
+	"recordSetCount": "4",
+	"recordSetStartNumber": "0",
+	"recordSetTotal": "4",
+	"resourceId": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/categoryview\/byParentCategory\/10083",
+	"resourceName": "categoryview"
+}

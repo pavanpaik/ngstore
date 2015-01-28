@@ -1,0 +1,76 @@
+{
+	"CatalogGroupView": [
+		{
+			"identifier": "Computers Laptops",
+			"name": "Laptops",
+			"parentCatalogGroupID": [
+				"10077"
+			],
+			"productsURL": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/productview\/byCategory\/10080",
+			"resourceId": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/categoryview\/byId\/10080",
+			"shortDescription": "Laptops",
+			"thumbnail": "images\/catalog\/electronics\/laptops.png",
+			"uniqueID": "10080"
+		},
+		{
+			"identifier": "Computers Tablets",
+			"name": "Tablets",
+			"parentCatalogGroupID": [
+				"10077"
+			],
+			"productsURL": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/productview\/byCategory\/10079",
+			"resourceId": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/categoryview\/byId\/10079",
+			"shortDescription": "Tablets",
+			"thumbnail": "images\/catalog\/electronics\/tablets.png",
+			"uniqueID": "10079"
+		},
+		{
+			"identifier": "Computers Accessories",
+			"name": "Accessories",
+			"parentCatalogGroupID": [
+				"10077"
+			],
+			"productsURL": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/productview\/byCategory\/10078",
+			"resourceId": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/categoryview\/byId\/10078",
+			"shortDescription": "Accessories",
+			"thumbnail": "images\/catalog\/electronics\/accessories.png",
+			"uniqueID": "10078"
+		},
+		{
+			"identifier": "Computers Desktops",
+			"name": "Desktops",
+			"parentCatalogGroupID": [
+				"10077"
+			],
+			"productsURL": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/productview\/byCategory\/10081",
+			"resourceId": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/categoryview\/byId\/10081",
+			"shortDescription": "Desktops",
+			"thumbnail": "images\/catalog\/electronics\/desktops.png",
+			"uniqueID": "10081"
+		},
+		{
+			"identifier": "Computers Components",
+			"name": "Components",
+			"parentCatalogGroupID": [
+				"10077"
+			],
+			"productsURL": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/productview\/byCategory\/10082",
+			"resourceId": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/categoryview\/byId\/10082",
+			"shortDescription": "Components",
+			"thumbnail": "images\/catalog\/electronics\/tablets.png",
+			"uniqueID": "10082"
+		}
+	],
+	"MetaData": [
+		{
+			"metaData": "1",
+			"metaKey": "price"
+		}
+	],
+	"recordSetComplete": "true",
+	"recordSetCount": "5",
+	"recordSetStartNumber": "0",
+	"recordSetTotal": "5",
+	"resourceId": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/categoryview\/byParentCategory\/10077",
+	"resourceName": "categoryview"
+}

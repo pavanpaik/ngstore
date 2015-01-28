@@ -1,0 +1,29 @@
+<div class="row">
+	<div class="col-md-2 col-xs-12">
+		<!-- Leftnav-->
+		<div class="panel panel-default">
+			<div class="panel-heading">Category</div>
+			<div class="panel-body">
+				<ul class='nav nav-pills nav-stacked'>
+					<li ng-repeat='childCategory in childCategories.CatalogGroupView'>
+						<a ui-sref='categories({ 
+								catgroupId : childCategory.uniqueID, 
+								categorySeoPath : (levels | catSeoFilter) + "-" + childCategory.name
+							})'>
+							{{childCategory.name}}
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-10 hidden-xs">
+		<h4>{{levels[levels.length-1]}}</h4>
+		<div emspot emsname='{{levels[levels.length-1]}}Row1_Content'></div>
+	</div>
+</div>
+
+
+
+
+

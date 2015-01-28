@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html id="ng-app" ng-app="ngBoilerplateShop<% if (dev) {%>.dev<%}%>" ng-controller="AppCtrl" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title ng-bind='app.title | titlize'>ngBoilerPlateShop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!-- social media tags -->
+    <meta name="twitter:card" content="summary"> 
+    <meta name="twitter:site" content="@joshdmiller">
+    <meta name="twitter:title" content="ngBoilerplate">
+    <meta name="twitter:description" content="Non-Trivial AngularJS Made Easy: Everything you need to kickstart AngularJS projects: a best-practice directory structure, an intelligent build system, and the best web design libraries around.">
+    <meta name="twitter:creator" content="@joshdmiller">
+    <meta name="twitter:image:src" content="https://a248.e.akamai.net/assets.github.com/images/modules/logos_page/Octocat.png?1366128846">
+    <meta property="og:title" content="ngBoilerplate" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://bit.ly/ngBoilerplate" />
+    <meta property="og:image" content="https://a248.e.akamai.net/assets.github.com/images/modules/logos_page/Octocat.png?1366128846" />
+    <meta property="og:description" content="Non-Trivial AngularJS Made Easy: Everything you need to kickstart AngularJS projects: a best-practice directory structure, an intelligent build system, and the best web design libraries around.">
+
+    <!-- font awesome from BootstrapCDN -->
+    <!--<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">-->
+
+    <!-- compiled CSS --><% styles.forEach( function ( file ) { %>
+    <link rel="stylesheet" type="text/css" href="/<%= file %>" /><% }); %>
+
+    <!--[if IE 7>
+    <link rel="stylesheet" href="assets/font-awesome-ie7.min.css />
+    <![endif]-->
+
+<!-- Internet Explorer AngularJS element creation -->
+<!--[if lte IE 8]>
+    <script>
+        document.createElement('ng-include');
+        document.createElement('ng-pluralize');
+        document.createElement('ng-view');
+        document.createElement('ng:include');
+        document.createElement('ng:pluralize');
+        document.createElement('ng:view');
+        document.createElement('header');
+        document.createElement('emspot');
+        document.createElement('footer');
+        document.createElement('accordion-heading');
+        document.createElement('accordion-group');
+    </script>
+    <script src="http://cdnjs.cloudfare.com/ajax/libs/json3/3.2.4/json3.min.js"></script>
+<![endif]-->
+
+    <!-- compiled CSS --><% scripts.forEach( function ( file ) { %>
+    <script type="text/javascript" src="/<%= file %>"></script><% }); %>
+
+    <!-- it's stupid to have to load it here, but this is for the +1 button -->
+    <!--<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+      { "parsetags": "explicit" }
+    </script>-->
+  </head>
+
+  <body>
+    <div id="wrap">
+      <header ng-include="'layout/header.tpl.html'"></header>
+      <div menubar class="menu-bar"></div>
+      <div ng-include="'layout/breadcrumb.tpl.html'"></div>
+      <div class="main container">
+        <!-- <div class="" ui-view='breadcrumb'></div> -->
+        <span emspot emsname='CatalogBanner_Content'></span>
+        <div class="" ui-view='main'></div>
+      </div>
+    </div>
+    <footer ng-include="'layout/footer.tpl.html'"></footer>
+  </body>
+</html>

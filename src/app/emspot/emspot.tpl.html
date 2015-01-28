@@ -1,0 +1,5 @@
+<!-- emspot of type MarketingContent :: Starts -->
+<span  ng-repeat="data in activityData | marketingContent">
+	<img ng-repeat="assets1 in data.attachmentAsset  | lang:'-1' " src="http://wcsbsc.ls.lagaude.ibm.com/wcsstore/AuroraStorefrontAssetStore/{{assets1.attachmentAssetPath}}" />
+</span>
+<!-- emspot of type MarketingContent :: Ends -->

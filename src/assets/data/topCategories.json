@@ -1,0 +1,70 @@
+{
+	"CatalogGroupView": [
+		{
+			"identifier": "Apparel",
+			"name": "Apparel",
+			"productsURL": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/productview\/byCategory\/10051",
+			"resourceId": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/categoryview\/byId\/10051",
+			"shortDescription": "The latest styles for the entire family.",
+			"thumbnail": "images\/catalog\/apparel\/Kids_clothing_sm.jpg",
+			"uniqueID": "10051"
+		},
+		{
+			"identifier": "Electronics",
+			"name": "Electronics",
+			"productsURL": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/productview\/byCategory\/10077",
+			"resourceId": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/categoryview\/byId\/10077",
+			"shortDescription": "Electronics",
+			"thumbnail": "images\/catalog\/electronics\/tablets.png",
+			"uniqueID": "10077"
+		},
+		{
+			"identifier": "Grocery",
+			"name": "Grocery",
+			"productsURL": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/productview\/byCategory\/10083",
+			"resourceId": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/categoryview\/byId\/10083",
+			"shortDescription": "Grocery",
+			"thumbnail": "images\/catalog\/grocery\/dairy.png",
+			"uniqueID": "10083"
+		},
+		{
+			"identifier": "Health",
+			"name": "Health",
+			"productsURL": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/productview\/byCategory\/10088",
+			"resourceId": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/categoryview\/byId\/10088",
+			"shortDescription": "Health",
+			"thumbnail": "images\/catalog\/health\/medicine.png",
+			"uniqueID": "10088"
+		},
+		{
+			"identifier": "Home Furnishings",
+			"name": "Home & Furnishing",
+			"productsURL": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/productview\/byCategory\/10091",
+			"resourceId": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/categoryview\/byId\/10091",
+			"shortDescription": "Home & Furnishing",
+			"thumbnail": "images\/catalog\/homefurnishings\/appliances.png",
+			"uniqueID": "10091"
+		},
+		{
+			"identifier": "NewslettersAndMagazines",
+			"name": "Newsletters & Magazines",
+			"productsURL": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/productview\/byCategory\/10098",
+			"resourceId": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/categoryview\/byId\/10098",
+			"shortDescription": "Newsletters & Magazines",
+			"thumbnail": "images\/catalog\/newslettersmagazines\/magazines.png",
+			"uniqueID": "10098"
+		}
+	],
+	"MetaData": [
+		{
+			"metaData": "1",
+			"metaKey": "price"
+		}
+	],
+	"recordSetComplete": "true",
+	"recordSetCount": "6",
+	"recordSetStartNumber": "0",
+	"recordSetTotal": "6",
+	"resourceId": "http:\/\/wcsbsc.ls.lagaude.ibm.com\/wcs\/resources\/store\/10153\/categoryview\/@top",
+	"resourceName": "categoryview"
+}

@@ -1,0 +1,75 @@
+
+<!-- Productlist Product View :: Starts -->
+<div class="">
+    <div class="well well-sm">
+
+
+
+
+
+	    <div class="row">
+	    	<div class="col-xs-12 col-md-12" ng-controller="PaginationCtrl">
+	    		 <strong>Page: {{currentPage}} / {{numPages}}</strong>
+	        
+				<div class="pull-right">
+					<div pagination total-items="subcat.CatalogEntryView.length" page="currentPage" max-size="10" class="pagination" rotate="false" num-pages="numPages" >
+					</div>
+				</div>
+
+				<div class="btn-group pull-right view-switchers">
+		            <a href="javascript:;" id="list" class="btn btn-sm" ng-class="listBtnClass" ng-click="listView()">
+		            	<span class="glyphicon glyphicon-th-list"></span>List
+		            </a> 
+		            <a href="javascript:;" id="grid" class="btn btn-sm"  ng-class="gridBtnClass" ng-click="gridView()">
+		            	<span class="glyphicon glyphicon-th"></span>Grid
+		            </a>
+		        </div>
+	    	</div>
+	    	<div class="col-xs-12 col-md-12">
+	    		<div class="pull-right">Sort by 
+			            <button data-toggle="dropdown" class="btn btn-default dropdown-toggle sort-options" type="button">
+			              <span class="">Brands</span>
+			              <span class="caret"></span>
+			            </button>
+			            <ul role="menu" class="dropdown-menu sort-options">
+			              <li><a ui-sref="home">No Sort</a></li>
+			              <li class="active"><a ui-sref="home">Brands</a></li>
+			              <li><a ui-sref="home">Name</a></li>
+			              <li><a ui-sref="home">Low to High</a></li>
+			              <li><a ui-sref="home">High to Low</a></li>
+			            </ul>
+				</div>
+	    	</div>
+	    </div>
+       
+    <div id="products" class="row list-group">
+        <div class="item  col-xs-6 col-sm-4 col-md-3 {{viewType}}" ng-repeat="catentryData in subcat.CatalogEntryView">
+            <div class="thumbnail prod-thumbnail">
+                <a ui-sref="product({productTitle: catentryData.name, partNumber: catentryData.partNumber })">
+			      <img ng-src="{{admin.staticContentPath}}{{catentryData.thumbnail}}" alt="{{catentryData.name}}">
+			      <!--http://{{admin.staticContentPath}} -->
+			    </a>
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        {{catentryData.name}}</h4>
+                    <p class="group inner list-group-item-text">
+                        {{catentryData.shortDescription}}</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                {{catentryData.Price[0].priceValue | currency:"USD$"}}</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a href="#" class="btn btn-primary" role="button">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+	</div>
+</div>
+<!-- Productlist Product View :: Ends -->

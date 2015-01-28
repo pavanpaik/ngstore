@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-sm-7 col-xs-5">
+    <div class='dropdown'>
+        <button class="btn dropdown-toggle department-toggle" type="button">
+          Departments
+          <span class="caret"></span>
+        </button>
+        <ul class='dropdown-menu department-menu' >
+          <li ng-repeat='category in categories'>
+            <a ui-sref='categories({ catgroupId : category.categoryId, categorySeoPath : category.name })'>{{category.name}}</a>
+          </li>
+        </ul>
+      </div>
+  </div>
+  <div class="col-sm-5 col-xs-7 pull-right">
+    <div class="input-group search" ng-class="{'has-error' : balnkSearch}">
+      <input type="text" placeholder='Search' class="form-control" ng-model="searchTerm" maxlength="25" ng-click="balnkSearch=false" on-enter="search(searchTerm, searchCategory)">
+      <div class="input-group-btn">
+            <button data-toggle="dropdown" class="btn btn-default dropdown-toggle all-department" type="button" ng-click="balnkSearch=false">
+              <span class="">{{searchCategory| searchWithinCategory}}</span>
+              <span class="caret"></span>
+            </button>
+            <ul role="menu" class="dropdown-menu all-department">
+              <li><a href ng-click="selectCategory(category.name)">All Departments</a></li>
+              <li ng-repeat='category in categories'><a href ng-click="selectCategory(category.name)">{{category.name}}</a></li>
+            </ul>
+            <a class="btn btn-default" type="button" href ng-click="search(searchTerm, searchCategory)">Go</span></a>
+      </div>
+    </div><!-- /input-group -->
+  </div>
+</div>

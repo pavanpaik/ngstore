@@ -1,0 +1,15 @@
+<div class='row'>
+<h1>storeId:: {{storeId}},  catalogId:: {{catalogId}}</h1>
+  <div class="carousel" interval='showcase.interval'>
+    <div ng-repeat='highlight in showcase.highlights'>
+      <div ng-class='highlight.class' style='background-image:url({{highlight.imageUrl}});'>
+        <div class='details'>
+          <a ng-if='highlight.logo' href='{{highlight.link}}'><img ng-src='{{highlight.logo}}'></a>
+          <h1>{{highlight.title}}</h1>
+          <p>{{highlight.text}}</p>
+          <a class='btn btn-info' href='{{highlight.link}}'>{{highlight.btn}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

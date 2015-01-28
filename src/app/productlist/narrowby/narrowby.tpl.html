@@ -1,0 +1,100 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title">Filter by</h4>
+    </div>
+    <div class="panel-body filter-panel-body">
+        <div class="panel-group" accordion close-others="false">
+
+            <div ng-repeat='facet in subcat.FacetView'>
+                <div ng-switch on="facet.name">
+                    <!-- Price -->
+                    <div ng-switch-when="undefined">
+                        <div accordion-group is-open="ispriceopen">
+                            <div accordion-heading>
+                                <span>Price</span> <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': ispriceopen, 'glyphicon-chevron-right': !ispriceopen}"></i>
+                            </div>
+                            <div class="price-range">
+                                <span class="price-element">$</span>
+                                <input type="text" class="form-control price-element">
+                                <span class="price-element">- $</span>
+                                <input type="text" class="form-control price-element">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Brand -->
+                    <div ng-switch-when="ManufacturerName">
+
+                        <div accordion-group is-open="isbrandopen">
+                            <div accordion-heading>
+                                <span>Brand</span> <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isbrandopen, 'glyphicon-chevron-right': !isbrandopen}"></i>
+                            </div>
+                            <ul class='nav nav-pills nav-stacked' ng-if="facet.name!=undefined">
+                                <li ng-repeat='facetEntry in facet.Entry'>
+                                    <a ui-sref='home({storeId : facetEntry.label, catalogId : facetEntry.count1})'>
+											{{facetEntry.label}} ({{facetEntry.count}})
+										</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+                    <!-- Color & Size -->
+                    <div ng-switch-when="Color">
+
+                        <div accordion-group is-open="iscoloropen">
+                            <div accordion-heading>
+                                <span>{{facet.name}}</span> <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': iscoloropen, 'glyphicon-chevron-right': !iscoloropen}"></i>
+                            </div>
+                            <div class="row">
+                                <div class="item col-xs-6 col-sm-6 col-md-6" ng-repeat='facetEntry in facet.Entry'>
+
+                                    <a ui-sref='home'>
+                                        <img src="http://wcsbsc.ls.lagaude.ibm.com/wcsstore/{{facetEntry.image}}" alt="{{facetEntry.label}}" title="{{facetEntry.label}}" class="img-thumbnail">({{facetEntry.count}})
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Color & Size -->
+                    <div ng-switch-when="Available Sizes">
+                        <div accordion-group is-open="issizeopen">
+                            <div accordion-heading>
+                                <span>{{facet.name}}</span> <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': issizeopen, 'glyphicon-chevron-right': !issizeopen}"></i>
+                            </div>
+                            <div class="row">
+                                <div class="item col-xs-6 col-sm-6 col-md-6" ng-repeat='facetEntry in facet.Entry'>
+
+                                    <a ui-sref='home'>
+                                        <img src="http://wcsbsc.ls.lagaude.ibm.com/wcsstore/{{facetEntry.image}}" alt="{{facetEntry.label}}" title="{{facetEntry.label}}" class="img-thumbnail">({{facetEntry.count}})
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Others -->
+                    <div ng-switch-default>
+                        <div accordion-group is-open="isopen">
+                            <div accordion-heading>
+                                <span>{{facet.name}}</span> <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isopen, 'glyphicon-chevron-right': !isopen}"></i>
+                            </div>
+
+                            <ul class='nav nav-pills nav-stacked'>
+                                <li ng-repeat='facetEntry in facet.Entry'>
+                                    <a ui-sref='home'>
+										{{facetEntry.label}} ({{facetEntry.count}})
+									</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
